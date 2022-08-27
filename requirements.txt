@@ -1,3 +1,6 @@
+# Use this file to create an environment:
+# $ conda create --name HapkeCNN --file requirements.txt
+# platform: linux-64
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 arrow @ file:///opt/conda/conda-bld/arrow_1649166651673/work
 astroid @ file:///tmp/abs_e5wkt48jiz/croots/recipe/astroid_1659023120113/work
