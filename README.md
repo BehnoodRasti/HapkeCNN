@@ -9,7 +9,7 @@ based on the Hapke model, that captures the nonlinearity, 2) the reconstruction 
 We provided all the datasets and the ground references used in the manuscript. The noisy datasets are for 30 dB. Below you see the results for Simulated dataset 2. 
 
 
-![image](https://user-images.githubusercontent.com/61419984/187027352-e78d5dbc-ef19-4ab1-b618-a223539d614c.png)
-![image](https://user-images.githubusercontent.com/61419984/187027403-0ae45cd1-a5fe-4db1-a97f-6ff9300f0edd.png)
+
+![image](https://user-images.githubusercontent.com/61419984/187027403-0ae45cd1-a5fe-4db1-a97f-6ff9300f0edd.png)![image](https://user-images.githubusercontent.com/61419984/187027352-e78d5dbc-ef19-4ab1-b618-a223539d614c.png)
 
 
