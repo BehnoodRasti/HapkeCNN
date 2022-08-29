@@ -25,7 +25,7 @@ torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark =True
 dtype = torch.cuda.FloatTensor
 PLOT = True
-save_result=True
+save_result=False
 
 #%%
 fname2  = "Git_Data/RELAB/Y_clean.mat"
