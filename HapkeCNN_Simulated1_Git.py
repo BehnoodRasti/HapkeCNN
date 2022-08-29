@@ -65,7 +65,7 @@ for fi in tqdm(range(tol1)):
         
         img_noisy_np = img_noisy_np.transpose(2,0,1)
         [p1, nr1, nc1] = img_noisy_np.shape
-        print(compare_snr(img_np_gt, img_noisy_np))
+        #print(compare_snr(img_np_gt, img_noisy_np))
         img_resh=np.reshape(img_noisy_np,(p1,nr1*nc1))
         V, SS, U = scipy.linalg.svd(img_resh, full_matrices=False)
         PC=np.diag(SS)@U
