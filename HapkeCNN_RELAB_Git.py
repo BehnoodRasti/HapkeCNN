@@ -15,15 +15,17 @@ import torch
 import torch.optim
 import torch.nn as nn
 
-from models import *
+from common import *
+from UnmixArch import UnmixArch
 from UtilityMine import *
 import scipy.io
 import scipy.linalg
+
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark =True
 dtype = torch.cuda.FloatTensor
 PLOT = True
-save_result=False
+save_result=True
 
 #%%
 fname2  = "Git_Data/RELAB/Y_clean.mat"
@@ -188,8 +190,8 @@ for fi in tqdm(range(tol1)):
 
     #%%
         if  save_result is True:
-                  scipy.io.savemat("ResultsNoPure/EestdB%01d%01d.mat" % (fi+2, fj+1),
+                  scipy.io.savemat("ResultsRelab/EestdB%01d%01d.mat" % (fi+2, fj+1),
                                     {'Eest%01d%01d' % (fi+2, fj+1):Eest})
-                  scipy.io.savemat("ResultsNoPure/out_avg_npdB%01d%01d.mat" % (fi+2, fj+1),
+                  scipy.io.savemat("ResultsRelab/out_avg_npdB%01d%01d.mat" % (fi+2, fj+1),
                                     {'out_avg_np%01d%01d' % (fi+2, fj+1):out_avg_np.transpose(1,2,0)})
         #
